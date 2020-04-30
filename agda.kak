@@ -34,8 +34,8 @@ add-highlighter shared/agda/line_comment2 region \|\|\|(?:[^!#$%&*+./<>?@\\\^|~=
 add-highlighter shared/agda/code/ regex (?<!')\b0x+[A-Fa-f0-9]+ 0:value
 add-highlighter shared/agda/code/ regex (?<!')\b\d+([.]\d+)? 0:value
 
-add-highlighter shared/agda/code/ regex (?<!')\b(where|constructor|record|partial|assess|assert_total|default|elim|error_reverse|hide|name|reflection|error_handlers|language|flag|dynamic|provide|inline|used|no_implicit|hint|extern|unqualified|error_handler)(?!')\b 0:keyword
-add-highlighter shared/agda/code/ regex (?<!')\b(if|in|then|else|of|case|do|data|default|proof|tactic)(?!')\b 0:keyword
+add-highlighter shared/agda/code/ regex (?<!')\b(abstract|data|hiding|import|as|infix|infixl|infixr|module|mutual|open|primitive|private|public|record|renaming|rewrite|using|where|with|field|constructor|instance|syntax|pattern|inductive|coinductive)(?!')\b 0:keyword
+add-highlighter shared/agda/code/ regex (?<!')\b(postulate|codata|let|in|forall)\b 0:keyword
 
 # Idris Tactic - TODO: restrict tactic keywords to their context
 add-highlighter shared/agda/code/ regex (?<!')\b(intros|rewrite|exact|refine|trivial|let|focus|try|compute|solve|attack|reflect|fill|applyTactic)(?!')\b 0:keyword
