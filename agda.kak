@@ -6,6 +6,8 @@
 
 hook global BufCreate .*[.](agda) %{
     set-option buffer filetype agda
+    
+    set-option buffer comment_line '--'
 
 	# Mixing tabs and spaces will break
 	# indentation sensitive syntax checking
